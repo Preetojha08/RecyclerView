@@ -61,11 +61,11 @@ public class MainActivity extends AppCompatActivity {
 
         adapter = new RecyclerAdapter(this,titles,sub_titles,images);
 
-        //For Grid Layout
+        // If You Want For Grid Layout than Uncomment this section and comment the linear layout portion
         //GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2,GridLayoutManager.VERTICAL,false);
         //recyclerView.setLayoutManager(gridLayoutManager);
 
-        //For Linear Layout
+        // If You Want For Linear Layout than Uncomment this section and comment the Grid layout portion
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         recyclerView.setAdapter(adapter);
 
